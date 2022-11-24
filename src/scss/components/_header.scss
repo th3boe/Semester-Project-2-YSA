@@ -1,0 +1,50 @@
+body {
+  background-color: $background-purple;
+}
+
+nav {
+  background-color: $bg-header-purple;
+  min-height: 45px;
+}
+
+header {
+  background-color: $bg-header-purple;
+  border-bottom: $border-bottom-header;
+  box-shadow: $box-shadow;
+}
+
+.logo {
+  width: 100%;
+  max-width: 150px;
+  margin: 0px auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+nav a {
+  color: white;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.slogan {
+  color: $bg-header-purple;
+  text-align: center;
+}
+
+#logout {
+  background: none;
+  border: none;
+  color: white;
+  &:hover {
+    color: black;
+  }
+}
