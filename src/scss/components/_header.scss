@@ -1,14 +1,14 @@
 body {
-  background-color: $background-purple;
+  background-color: $background-greyish;
 }
 
 nav {
-  background-color: $bg-header-purple;
+  background-color: $bg-header-orange;
   min-height: 45px;
 }
 
 header {
-  background-color: $bg-header-purple;
+  background-color: $bg-header-orange;
   border-bottom: $border-bottom-header;
   box-shadow: $box-shadow;
 }
@@ -36,7 +36,7 @@ nav a:hover {
 }
 
 .slogan {
-  color: $bg-header-purple;
+  color: $border-nav-color-and-text;
   text-align: center;
 }
 

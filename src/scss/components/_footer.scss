@@ -1,11 +1,15 @@
 footer {
-  opacity: 100%;
+  color: $border-nav-color-and-text;
 }
 
-footer a.active {
+.footer a {
+  color: $border-nav-color-and-text;
+}
+
+.footer a.active {
   font-weight: bold;
 }
 
-footer a:hover {
-  opacity: 70%;
+.footer a:hover {
+  color: black;
 }

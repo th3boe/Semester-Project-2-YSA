@@ -10776,13 +10776,13 @@ body {
 }
 
 nav {
-  background-color: #b36836;
+  background-color: #ac5d28;
   min-height: 45px;
 }
 
 header {
-  background-color: #b36836;
-  border-bottom: 1px solid #b36836;
+  background-color: #ac5d28;
+  border-bottom: 1px solid #ac5d28;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
 }
 
@@ -10809,7 +10809,7 @@ nav a:hover {
 }
 
 .slogan {
-  color: #b36836;
+  color: #7e3a12;
   text-align: center;
 }
 
@@ -10823,20 +10823,24 @@ nav a:hover {
 }
 
 footer {
-  opacity: 100%;
+  color: #7e3a12;
 }
 
-footer a.active {
+.footer a {
+  color: #7e3a12;
+}
+
+.footer a.active {
   font-weight: bold;
 }
 
-footer a:hover {
-  opacity: 70%;
+.footer a:hover {
+  color: black;
 }
 
 .card {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
-  border: 1px solid #914920;
+  border: 1px solid #7e3a12;
   background-color: #f0f0f0;
 }
 
@@ -10861,7 +10865,7 @@ p {
 
 .bttn {
   min-width: 170px;
-  background-color: #b36836;
+  background-color: #ac5d28;
   color: white;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
   border: 1px solid black;
@@ -10870,7 +10874,7 @@ p {
   font-size: 20px;
 }
 .bttn:hover {
-  background-color: #b36836;
+  background-color: #ac5d28;
   box-shadow: none;
   border-radius: 5px;
   border: 1.5px solid black;
