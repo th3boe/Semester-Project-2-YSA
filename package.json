@@ -1,0 +1,35 @@
+{
+  "name": "semester-project-2-ysa",
+  "version": "1.0.0",
+  "description": "Online Yard Sale Auction Site created for my second semester project through Noroff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/scss:dist/css",
+    "watch": "sass --watch src/scss:dist/css & live-server",
+    "start": "npm run build && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/th3boe/Semester-Project-2-YSA.git"
+  },
+  "keywords": [
+    "auction",
+    "bootstrap",
+    "sass",
+    "js"
+  ],
+  "author": "Benedicte Øverbø",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/th3boe/Semester-Project-2-YSA/issues"
+  },
+  "homepage": "https://github.com/th3boe/Semester-Project-2-YSA#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.56.1"
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Yard Sale Auctions | Home</title>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="dist/css/stylesheet.css" />
+    <!-- <script src="src/js/api/posts/getPosts.mjs" type="module" defer></script>
+    <script src="/src/js/api/globals/menu.mjs" type="module" defer></script>
+    <script
+      src="/src/js/api/globals/searchPosts.mjs"
+      type="module"
+      defer
+    ></script> -->
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="py-2">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="/" class="active px-4">Home</a></li>
+          <li class="nav-item signin-btn">
+            <a href="/profile/login/" class="px-4">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="/profile/register/" class="px-4">Register</a>
+          </li>
+        </ul>
+        <ul class="nav">
+          <li class="nav-item logout-btn-container">
+            <button class="px-4" id="logout">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="py-3 mb-4">
+      <div class="container d-flex flex-wrap justify-content-center align-items-center">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+          <svg class="bi me-2" width="0" height="0">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4"><img src="images/logo-auction-fixed.png" class="logo" alt="Yard Sale Auctions Logo"/></span>
+        </a>
+        <div class="col-12 col-lg-auto mb-6 mb-lg-0 align-content-center" role="search">
+          <input type="search" class="form-control search" placeholder="Search..." aria-label="Search">
+        </div>
+      </div>
+    </header>
+    <main>
+
+        <div class="slogan">
+            <p>"Hate people in your yard? We AUCTION off your stuff online."</p>
+        </div>
+
+        <div class="center-buttons">
+            <div class="button-move"><a href="/post/create/"><button class="w-30 bttn btn-lg" type="button">Profile</button></a></div>
+            <div class="button-move"><a href="/post/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
+        </div>
+
+        <div class="card m-2 justify-content-center">
+            <div class="border-left border-right px-0">
+              <div class="p-3 border-bottom">
+                <h1 class="mb-2">LISTINGS<i class="far fa-xs fa-star ms-auto text-primary"></i></h1>
+              </div>
+    
+              <div id="listings">
+
+                <p>"new listings will be added here, remove this when API is set up"</p>
+
+              </div>
+
+            </div>
+          </div>
+
+    </main>
+    <footer class="py-3 my-4 mt-auto">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item footer">
+            <a href="/" class="active nav-link px-2">Home</a>
+          </li>
+          <li class="nav-item footer">
+            <a href="/profile/register/" class="nav-link px-2">Profile</a>
+          </li>
+          <li class="nav-item footer">
+            <a href="/profile/login/" class="nav-link px-2">Login</a>
+          </li>
+          <li class="nav-item footer">
+            <a href="/profile/register/" class="nav-link px-2">Register</a>
+          </li>
+        </ul>
+        <p class="text-center">© 2022 Yard Sale Auctions created by BOE</p>
+    </footer>
+  </body>
+</html>
