@@ -2,6 +2,7 @@
   box-shadow: $box-shadow-border;
   border: 1px solid $border-nav-color-and-text;
   background-color: #f0f0f0;
+  box-sizing: border-box;
 }
 
 h1,
@@ -20,21 +21,4 @@ p {
 .center-buttons {
   margin: auto;
   text-align: center;
-}
-
-.bttn {
-  min-width: 170px;
-  background-color: $bg-header-orange;
-  color: white;
-  box-shadow: $box-shadow;
-  border: 1px solid black;
-  padding: 9px;
-  border-radius: 20px;
-  font-size: 20px;
-  &:hover {
-    background-color: $bg-header-orange;
-    box-shadow: none;
-    border-radius: 5px;
-    border: 1.5px solid black;
-  }
 }
