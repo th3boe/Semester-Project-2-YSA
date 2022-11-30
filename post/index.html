@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Yard Sale Auctions | Profile</title>
+    <title>Yard Sale Auctions | Login</title>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/dist/css/stylesheet.css" />
   </head>
@@ -46,43 +46,24 @@
             <p>"Hate people in your yard? We AUCTION off your stuff online."</p>
         </div>
 
-        <section>
-            <div class="container py-3">
-              <div class="row d-flex justify-content-center align-items-center">
-                <div class="col-md-12 col-xl-4">
-          
-                  <div class="card">
-                    <div class="card-body text-center">
-                      <div class="mt-3 mb-4">
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                          class="rounded-circle img-fluid" style="width: 100px;"/>
-                      </div>
-                      <h4 class="mb-2">Julie L. Arsenault</h4>
-                      <p class="text-muted mb-4">Seller <span class="mx-2">|</span> Bidder</p>
-                    
-
-                      <div class="center-buttons">
-                        <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">All Listings</button></a></div>
-                        <div class="button-move"><a href="/post/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
-                      </div>
-
-                      <div class="d-flex justify-content-evenly text-center mt-5 mb-2">
-                        <div class="px-3">
-                          <p class="mb-2 h5">1000</p>
-                          <p class="text-muted mb-0">Tokens</p>
-                        </div>
-                        <div>
-                          <p class="mb-2 h5">5</p>
-                          <p class="text-muted mb-0">Sales</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-          
-                </div>
+        <div class="card m-2 justify-content-center">
+            <div class="border border-left border-right px-0">
+              <div class="p-3 border-bottom">
+                <h4 class="d-flex mb-2">
+                  LISTING <i class="far fa-xs fa-star ms-auto text-primary"></i>
+                </h4>
+                <a href="/post/create/"><button class="w-30 bttn btn-lg" type="button">
+                    New Listing
+                </button></a>
+              </div>
+    
+              <div
+                class="card m-1 d-flex p-3 border-bottom row"
+                id="singlePost"
+                class="single-post">
               </div>
             </div>
-          </section>
+          </div>
 
     </main>
     <footer class="py-3 my-4 mt-auto">
@@ -91,7 +72,7 @@
             <a href="/" class="nav-link px-2">Home</a>
           </li>
           <li class="nav-item footer">
-            <a href="/profile/profile/" class="active nav-link px-2">Profile</a>
+            <a href="/profile/profile/" class="nav-link px-2">Profile</a>
           </li>
           <li class="nav-item footer">
             <a href="/profile/login/" class="nav-link px-2">Sign In</a>
