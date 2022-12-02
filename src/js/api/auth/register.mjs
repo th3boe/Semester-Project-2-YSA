@@ -1,10 +1,10 @@
 import { API_AUCTION_URL } from "../constants.mjs";
 
-const theAction = "/auth/register";
+const action = "/auth/register";
 const method = "POST";
 
 export async function register(yourProfile) {
-  const registerURL = API_AUCTION_URL + theAction;
+  const registerURL = API_AUCTION_URL + action;
   const body = JSON.stringify(yourProfile);
 
   try {
@@ -17,8 +17,8 @@ export async function register(yourProfile) {
     });
 
     const result = await response.json();
-
     console.log(response);
+
     if (response.status === 201) {
       location.href = "../../../../profile/signin/";
     }
