@@ -9,9 +9,9 @@ export function setRegistrationFormListener() {
 
       const form = event.target;
       const formData = new FormData(form);
-      const theProfile = Object.fromEntries(formData.entries());
+      const yourProfile = Object.fromEntries(formData.entries());
 
-      register(theProfile);
+      register(yourProfile);
     });
   }
 }

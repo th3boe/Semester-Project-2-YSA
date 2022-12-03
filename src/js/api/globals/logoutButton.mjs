@@ -6,7 +6,7 @@ export function logoutButton() {
   if (theButton) {
     theButton.onclick = function () {
       remove("token");
-      remove("theProfile");
+      remove("yourProfile");
       location.href = "../../../../profile/signin";
     };
   }
