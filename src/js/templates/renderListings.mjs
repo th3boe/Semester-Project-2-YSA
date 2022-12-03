@@ -23,7 +23,6 @@ export function renderListings(listings) {
         <p class="listing-text m-2">${listing.description}</p>
         <p>${listing.tags}</p>
         <p>${listing.endsAt}</p>
-        <p>${listing.bids}</p>
         </div>
         </a>
         `;

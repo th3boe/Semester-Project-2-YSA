@@ -24,7 +24,7 @@ export async function signIn(yourProfile) {
     if (response.status === 200) {
       storage.storageSave("token", accessToken);
       storage.storageSave("yourProfile", user);
-      location.href = "../../../../index.html";
+      location.href = "../../../../profile/profile/index.html";
     }
 
     if (response.status !== 200) {
