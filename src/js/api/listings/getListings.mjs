@@ -1,6 +1,7 @@
 import { API_AUCTION_URL } from "../constants.mjs";
 import { authFetch } from "./authFetch.mjs";
 import { renderListings } from "../../templates/renderListings.mjs";
+import { searchListings } from "../globals/searchListings.mjs";
 
 const action = "/listings";
 const method = "GET";
@@ -14,6 +15,7 @@ const method = "GET";
 
     if (response.status === 200) {
       renderListings(json);
+      searchListings(json);
     }
 
     console.log(json);
