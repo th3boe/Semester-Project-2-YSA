@@ -10877,7 +10877,13 @@ footer {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
   border: 1px solid #7e3a12;
   background-color: #f0f0f0;
-  box-sizing: border-box;
+}
+
+.listing-link {
+  color: black;
+}
+.listing-link:hover {
+  color: #7e3a12;
 }
 
 h1, .h1,
@@ -10897,6 +10903,17 @@ p {
 .center-buttons {
   margin: auto;
   text-align: center;
+}
+
+.auction-image {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+  object-fit: cover;
+  border: black solid 1px;
+  border-radius: 15px;
+  width: 50%;
+  align-items: center;
+  margin: 15px auto;
+  padding: 0px;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
