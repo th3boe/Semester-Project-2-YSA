@@ -2,7 +2,13 @@
   box-shadow: $box-shadow-border;
   border: 1px solid $border-nav-color-and-text;
   background-color: #f0f0f0;
-  box-sizing: border-box;
+}
+
+.listing-link {
+  color: black;
+  &:hover {
+    color: $border-nav-color-and-text;
+  }
 }
 
 h1,
@@ -21,4 +27,15 @@ p {
 .center-buttons {
   margin: auto;
   text-align: center;
+}
+
+.auction-image {
+  box-shadow: $box-shadow-border;
+  object-fit: cover;
+  border: black solid 1px;
+  border-radius: 15px;
+  width: 50%;
+  align-items: center;
+  margin: 15px auto;
+  padding: 0px;
 }
