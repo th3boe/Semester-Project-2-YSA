@@ -7,6 +7,8 @@ const method = "POST";
 export async function createListing(listingData) {
   const createListingURL = API_AUCTION_URL + action;
 
+  console.log("hey");
+
   try {
     const response = await authFetch(createListingURL, {
       method,
