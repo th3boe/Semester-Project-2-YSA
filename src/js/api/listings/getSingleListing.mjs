@@ -43,15 +43,14 @@ const container = document.querySelector("#singleListing");
       <p class="listing-text my-3">${singleListing.description}</p>
       ${image}
       <p>${singleListing.tags}</p>
-      <p>Information about the seller of this item:</p>
+      <h3>Information about the seller of this item:</h3>
       <p>Name: ${singleListing.seller.name}</p>
       <p>Email: ${singleListing.seller.email}</p>
       ${avatarImage}
-      <p>Current bids on this item:</p>
-      <p>${singleListing.bids.id}</p>
-      <p>${singleListing.bids.amount}</p>
-      <p>${singleListing.bids.bidderName}</p>
-      <p>${singleListing.bids.created}</p>
+      <h4>Bids:</h4>
+      <p>Current bids on this item: ${singleListing.bids[10].amount}</p>
+      <p>Top bidder: ${singleListing.bids[10].bidderName}</p>
+      <p>Highest bid created: ${singleListing.bids[10].created}</p>
       <p class="card-footer text-muted m-0">${singleListing.endsAt}</p>
       </div>
 
