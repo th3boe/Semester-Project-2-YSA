@@ -10910,7 +10910,18 @@ p {
   object-fit: cover;
   border: black solid 1px;
   border-radius: 15px;
-  width: 50%;
+  width: 70%;
+  align-items: center;
+  margin: 15px auto;
+  padding: 0px;
+}
+
+.avatar-image {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+  object-fit: cover;
+  border: black solid 1px;
+  border-radius: 15px;
+  width: 20%;
   align-items: center;
   margin: 15px auto;
   padding: 0px;
