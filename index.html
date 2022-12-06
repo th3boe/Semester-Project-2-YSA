@@ -7,18 +7,24 @@
     <title>Yard Sale Auctions | Listings</title>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="dist/css/stylesheet.css" />
+    <script src="src/js/api/listings/getListings.mjs" type="module" defer></script>
+    <script src="src/js/api/globals/menu.mjs" type="module" defer></script>
+    <script src="/src/js/api/globals/searchListings.mjs" type="module" defer></script>
   </head>
 
   <body class="d-flex flex-column min-vh-100">
-    <nav class="py-2">
+    <nav class="navbar navbar-fixed-top">
       <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
           <li class="nav-item"><a href="/" class="active px-4">Home</a></li>
           <li class="nav-item signin-btn">
-            <a href="/profile/login/" class="px-4">Sign In</a>
+            <a href="/profile/signin/" class="px-4">Sign In</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item register-btn">
             <a href="/profile/register/" class="px-4">Register</a>
+          </li>
+          <li class="nav-item profile-btn">
+            <a href="/profile/profile/" class="px-4">Profile</a>
           </li>
         </ul>
         <ul class="nav">
@@ -51,23 +57,20 @@
 
         <div class="center-buttons">
             <div class="button-move"><a href="/profile/profile/"><button class="w-30 bttn btn-lg" type="button">Profile</button></a></div>
-            <div class="button-move"><a href="/post/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
+            <div class="button-move"><a href="/listing/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
         </div>
 
-        <div class="card m-2 justify-content-center">
+        <div class="card m-3 justify-content-center">
             <div class="border-left border-right px-0">
               <div class="p-3 border-bottom">
                 <h1 class="mb-2">LISTINGS<i class="far fa-xs fa-star ms-auto text-primary"></i></h1>
               </div>
-    
-              <div id="listings">
 
-                <p>"new listings will be added here, remove this when API is set up"</p>
-
-              </div>
+                <div id="listings" class="center-cards">
+                </div>
 
             </div>
-          </div>
+        </div>
 
     </main>
     <footer class="py-3 my-4 mt-auto">
@@ -79,7 +82,7 @@
             <a href="/profile/profile/" class="nav-link px-2">Profile</a>
           </li>
           <li class="nav-item footer">
-            <a href="/profile/login/" class="nav-link px-2">Sign In</a>
+            <a href="/profile/signin/" class="nav-link px-2">Sign In</a>
           </li>
           <li class="nav-item footer">
             <a href="/profile/register/" class="nav-link px-2">Register</a>

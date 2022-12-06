@@ -4,9 +4,11 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Yard Sale Auctions | Login</title>
+    <title></title>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/dist/css/stylesheet.css" />
+    <script src="../src/js/api/listings/getSingleListing.mjs" type="module" defer></script>
+    <script src="/src/js/api/globals/menu.mjs" type="module" defer></script>
   </head>
 
   <body class="d-flex flex-column min-vh-100">
@@ -15,10 +17,13 @@
         <ul class="nav me-auto">
           <li class="nav-item"><a href="/" class="px-4">Home</a></li>
           <li class="nav-item signin-btn">
-            <a href="/profile/login/" class="px-4">Sign In</a>
+            <a href="/profile/signin/" class="px-4">Sign In</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item register-btn">
             <a href="/profile/register/" class="px-4">Register</a>
+          </li>
+          <li class="nav-item profile-btn">
+            <a href="/profile/profile/" class="px-4">Profile</a>
           </li>
         </ul>
         <ul class="nav">
@@ -46,24 +51,22 @@
             <p>"Hate people in your yard? We AUCTION off your stuff online."</p>
         </div>
 
-        <div class="card m-2 justify-content-center">
-            <div class="border border-left border-right px-0">
-              <div class="p-3 border-bottom">
-                <h4 class="d-flex mb-2">
-                  LISTING <i class="far fa-xs fa-star ms-auto text-primary"></i>
-                </h4>
-                <a href="/post/create/"><button class="w-30 bttn btn-lg" type="button">
-                    New Listing
-                </button></a>
-              </div>
-    
-              <div
-                class="card m-1 d-flex p-3 border-bottom row"
-                id="singlePost"
-                class="single-post">
-              </div>
+        <div class="center-buttons">
+          <div class="button-move"><a href="/profile/profile/"><button class="w-30 bttn btn-lg" type="button">Profile</button></a></div>
+          <div class="button-move"><a href="/listing/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
+        </div>
+
+        <div class="card m-3 justify-content-center">
+          <div class="border-left border-right px-0">
+            <div class="p-3 border-bottom">
+              <h1 class="mb-2">MAYBE YOUR FUTURE ITEM?<i class="far fa-xs fa-star ms-auto text-primary"></i></h1>
             </div>
+
+              <div id="singleListing" class="center-cards">
+              </div>
+
           </div>
+        </div>
 
     </main>
     <footer class="py-3 my-4 mt-auto">
@@ -75,7 +78,7 @@
             <a href="/profile/profile/" class="nav-link px-2">Profile</a>
           </li>
           <li class="nav-item footer">
-            <a href="/profile/login/" class="nav-link px-2">Sign In</a>
+            <a href="/profile/signin/" class="nav-link px-2">Sign In</a>
           </li>
           <li class="nav-item footer">
             <a href="/profile/register/" class="nav-link px-2">Register</a>
