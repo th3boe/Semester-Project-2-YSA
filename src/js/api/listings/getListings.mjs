@@ -7,7 +7,7 @@ const action = "/listings";
 const method = "GET";
 
 (async function getListings() {
-  const url = `${API_AUCTION_URL}${action}`;
+  const url = `${API_AUCTION_URL}${action}?sort=created&sortOrder=desc`;
 
   try {
     const response = await authFetch(url, method);

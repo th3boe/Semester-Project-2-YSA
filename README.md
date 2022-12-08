@@ -14,31 +14,31 @@ Online Yard Sale Auction Site!
 
 ### Delivery links
 
-[] A Gantt chart for project timing
-(link)
-[] A design prototype
-(link)
-[] A style guide
-(link)
-[] A kanban project board
-(link)
-[] A repository link
-(link)
-[] A hosted application demo link
-(link)
+- [] A Gantt chart for project timing
+  (link)
+- [] A design prototype
+  (link)
+- [] A style guide
+  (link)
+- [] A kanban project board
+  (link)
+- [] A repository link
+  (link)
+- [] A hosted application demo link
+  (link)
 
 ### The site must contain:
 
-[x] A user with a stud.noroff.no email may register
-[x] A registered user may login
-[x] A registered user may logout
-[] A registered user may update their avatar
-[] A registered user may view their total credit
-[] A registered user may create a Listing with a title, deadline date, media gallery and description
-[] A registered user may add a Bid to another user’s Listing
-[] A registered user may view Bids made on a Listing
-[] A registered user may use credit to make a Bid on another user’s Listing
-[x] An unregistered user may search through Listings
+- [x] A user with a stud.noroff.no email may register
+- [x] A registered user may login
+- [x] A registered user may logout
+- [] A registered user may update their avatar
+- [] A registered user may view their total credit
+- [] A registered user may create a Listing with a title, deadline date, media gallery and description
+- [] A registered user may add a Bid to another user’s Listing
+- [] A registered user may view Bids made on a Listing
+- [] A registered user may use credit to make a Bid on another user’s Listing
+- [x] An unregistered user may search through Listings
 
 ### WCAG
 
@@ -69,8 +69,9 @@ Online Yard Sale Auction Site!
 
 ### Built With
 
-- [CSS](https://github.com/th3boe/semester-project-1-CSM/tree/main/css)
+- [CSS Frameworks / SCSS](https://github.com/th3boe/semester-project-1-CSM/tree/main/css)
 - [HTML](https://github.com/th3boe/semester-project-1-CSM)
+- [JS] link
 
 ## Getting Started
 
@@ -96,4 +97,21 @@ If you want to get in contact with me (the developer), you can look me up on my 
 
 ## References
 
-(text)
+### Bootstrap guidance:
+
+- https://getbootstrap.com/docs/4.0/utilities/spacing/
+-
+
+#### Maybe Changes
+
+do not show register when logged in
+add profile to nav when logged in
+(fix this for all pages!!)
+
+lock nav to stay put when used is scrolling listings!
+
+Add edit / delete post
+
+Figure out how to add in bid info to post.
+
+Limit view of unregistered user.

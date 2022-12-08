@@ -9,9 +9,7 @@ const action = "/listings";
 const method = "GET";
 
 const url = `${API_AUCTION_URL}${action}/${id}?_seller=true&_bids=true`;
-
 const title = document.querySelector("title");
-
 const container = document.querySelector("#singleListing");
 
 (async function getSingleListing() {
@@ -28,6 +26,12 @@ const container = document.querySelector("#singleListing");
       class="auction-image"
     />`
       : "";
+
+    const bids = singleListing.bids[1]
+      ? `<p>Current bids on this item: ${singleListing.bids[1].amount}</p>
+      <p>Top bidder: ${singleListing.bids[1].bidderName}</p>
+      <p>Highest bid created: ${singleListing.bids[1].created}</p>`
+      : "<p> no bids yet! </p>";
 
     const avatarImage = singleListing.avatar
       ? `<img
@@ -48,9 +52,7 @@ const container = document.querySelector("#singleListing");
       <p>Email: ${singleListing.seller.email}</p>
       ${avatarImage}
       <h4>Bids:</h4>
-      <p>Current bids on this item: ${singleListing.bids[10].amount}</p>
-      <p>Top bidder: ${singleListing.bids[10].bidderName}</p>
-      <p>Highest bid created: ${singleListing.bids[10].created}</p>
+      ${bids}
       <p class="card-footer text-muted m-0">${singleListing.endsAt}</p>
       </div>
 
