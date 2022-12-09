@@ -34,7 +34,7 @@ Online Yard Sale Auction Site!
 - [x] A registered user may logout
 - [] A registered user may update their avatar
 - [] A registered user may view their total credit
-- [] A registered user may create a Listing with a title, deadline date, media gallery and description
+- [x] A registered user may create a Listing with a title, deadline date, media gallery and description
 - [] A registered user may add a Bid to another user’s Listing
 - [] A registered user may view Bids made on a Listing
 - [] A registered user may use credit to make a Bid on another user’s Listing
@@ -104,13 +104,12 @@ If you want to get in contact with me (the developer), you can look me up on my 
 
 #### Maybe Changes
 
-do not show register when logged in
-add profile to nav when logged in
+Move signIn to signOut place??
 (fix this for all pages!!)
 
 lock nav to stay put when used is scrolling listings!
 
-Add edit / delete post
+Add edit
 
 Figure out how to add in bid info to post.
 
