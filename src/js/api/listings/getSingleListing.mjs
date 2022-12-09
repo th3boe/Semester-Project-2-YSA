@@ -1,5 +1,6 @@
 import { API_AUCTION_URL } from "../constants.mjs";
 import { authFetch } from "./authFetch.mjs";
+import { deleteListing } from "./deleteListing.mjs";
 
 const params = new URLSearchParams(document.location.search);
 const id = params.get("id");
@@ -58,9 +59,9 @@ const container = document.querySelector("#singleListing");
 
 
     <div class="center-buttons mb-3">
-    <div class="button-move"><a href="/listing/bid/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Add a Bid</button></a></div>
-      <div class="button-move"><a href="/listing/edit/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Edit Listing</button></a></div>
-      <div class="button-move"><button class="w-30 bttn btn-lg" type="button" id="delete" singleListing-delete="${singleListing.id}">Delete Listing</button></div>
+      <button class="w-30 bttn btn-lg" id="delete" type="button" data-delete="${singleListing.id}">Delete Listing</button>
+      <a href="/listing/bid/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Add a Bid</button></a>
+      <a href="/listing/edit/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Edit Listing</button></a>
     </div>`;
 
     const deleteBtn = document.querySelector("#delete");
