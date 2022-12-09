@@ -1,5 +1,5 @@
 import { load } from "../../storage/index.mjs";
-import { logoutButton } from "./logoutButton.mjs";
+import { removeAddButton } from "./removeAddButton.mjs";
 
 function menu() {
   const logoutBtn = document.querySelector(".logout-btn-container");
@@ -24,6 +24,6 @@ function menu() {
     profileBtn.style.display = "none";
   }
 
-  logoutButton();
+  removeAddButton();
 }
 menu();

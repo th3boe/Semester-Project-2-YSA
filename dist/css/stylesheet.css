@@ -10809,6 +10809,12 @@ textarea.form-control-lg {
 #opacity-bttn {
   opacity: 50%;
 }
+#opacity-bttn:hover {
+  background-color: #ac5d28;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+  border-radius: 20px;
+  border: 1px solid black;
+}
 
 body {
   background-color: #d8d8d8;

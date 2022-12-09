@@ -35,4 +35,10 @@
 
 #opacity-bttn {
   opacity: 50%;
+  &:hover {
+    background-color: $bg-header-orange;
+    box-shadow: $box-shadow;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
 }

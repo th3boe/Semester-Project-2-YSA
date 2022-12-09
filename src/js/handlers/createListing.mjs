@@ -16,10 +16,6 @@ export function setCreateListingListener() {
       const media = formData.get("media").split(", ");
       const endsAt = new Date(formData.get("endsAt"));
 
-      //   const post = Object.fromEntries(
-      //     formData.entries(title, description, tags, media, endsAt)
-      //   );
-
       const post = { title, description, tags, media, endsAt };
 
       if (post.tags === "") {
