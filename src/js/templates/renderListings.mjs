@@ -1,3 +1,5 @@
+import { load } from "../storage/index.mjs";
+
 export function renderListings(listings) {
   const container = document.querySelector("#listings");
 
@@ -15,8 +17,8 @@ export function renderListings(listings) {
       />`
       : "";
 
-    const viewMore = listing.id
-      ? `<a href="listing/?id=${listing.id}">View Listing</a>`
+    const token = listing.id
+      ? load`<a href="listing/?id=${listing.id}">View Listing</a>`
       : "";
 
     container.innerHTML += `
@@ -26,7 +28,7 @@ export function renderListings(listings) {
         ${image}
         <p>${listing.tags}</p>
 
-        ${viewMore}
+        ${token}
 
         <p class="card-footer text-muted m-0">${listing.endsAt}</p>
         </div>
