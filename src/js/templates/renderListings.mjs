@@ -1,5 +1,7 @@
 import { load } from "../storage/index.mjs";
 
+const token = load("token");
+
 export function renderListings(listings) {
   const container = document.querySelector("#listings");
 
@@ -17,8 +19,10 @@ export function renderListings(listings) {
       />`
       : "";
 
-    const token = listing.id
-      ? load`<a href="listing/?id=${listing.id}">View Listing</a>`
+    const viewListing = token
+      ? `<div class="center-buttons mb-3">
+      <div class="button-move"><a href="listing/?id=${listing.id}"><button class="w-30 bttn btn-lg" type="button" alt="View Listing Button">View Listing</button></a></div>
+    </div> `
       : "";
 
     container.innerHTML += `
@@ -28,16 +32,10 @@ export function renderListings(listings) {
         ${image}
         <p>${listing.tags}</p>
 
-        ${token}
+        ${viewListing}
 
         <p class="card-footer text-muted m-0">${listing.endsAt}</p>
         </div>
         `;
   }
-}
-
-{
-  /* <div class="center-buttons mb-3">
-    <div class="button-move"><a href="listing/?id=${listing.id}"><button class="w-30 bttn btn-lg" type="button">View Listing</button></a></div>
-  </div> */
 }
