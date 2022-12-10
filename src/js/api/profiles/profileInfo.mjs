@@ -17,7 +17,7 @@ const container = document.querySelector("#myProfile");
 console.log(userName);
 console.log(url);
 
-async function getProfile() {
+export async function getProfile() {
   try {
     const response = await authFetch(url, { method });
     const profileInfo = await response.json();
@@ -47,8 +47,8 @@ async function getProfile() {
 
         <div class="center-buttons">
             <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">My Listings</button></a></div>
-            <div class="button-move"><a href="/listing/create/"><button class="w-30 bttn btn-lg" type="button">All Listings</button></a></div>
-            <div class="button-move"><a href="/listing/bid/"><button class="w-30 bttn btn-lg" type="button">Update Avatar</button></a></div>
+            <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">All Listings</button></a></div>
+            <div class="button-move"><a href="/profile/avatarEdit/"><button class="w-30 bttn btn-lg" type="button">Update Avatar</button></a></div>
         </div>
 
         <div class="card-footer d-flex justify-content-evenly text-center mt-5">
@@ -66,5 +66,3 @@ async function getProfile() {
   }
 }
 getProfile();
-
-//         <p class="text-muted mb-4">Wins: ${profileInfo.wins} <span class="mx-2">|</span> Listings: ${profileInfo.count.listings}</p>

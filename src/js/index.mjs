@@ -10,4 +10,6 @@ if (path === "/profile/signin/") {
   listeners.setRegistrationFormListener();
 } else if (path === "/listing/create/") {
   listeners.setCreateListingListener();
+} else if (path === "/profile/avatarEdit/") {
+  listeners.setEditAvatarListener();
 }
