@@ -4,9 +4,10 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Yard Sale Auctions | Profile</title>
+    <title></title>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/dist/css/stylesheet.css"/>
+    <script src="/src/js/api/profiles/profileInfo.mjs" type="module" defer></script>
     <script src="/src/js/api/globals/menu.mjs" type="module" defer></script>
   </head>
 
@@ -51,13 +52,22 @@
         </div>
 
         <section>
+
+          <div class="center-buttons">
+            <div class="button-move"><a href="/profile/profile/"><button class="w-30 bttn btn-lg" id="opacity-bttn" type="button">Profile</button></a></div>
+            <div class="button-move"><a href="/listing/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
+          </div>
+
             <div class="container py-3">
               <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-md-12 col-xl-4">
           
                   <div class="card">
                     <div class="card-body text-center">
-                      <div class="mt-3 mb-4">
+
+                      <div id="myProfile"></div>
+
+                      <!-- <div class="mt-3 mb-4">
                         <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
                           class="rounded-circle img-fluid" style="width: 100px;"/>
                       </div>
@@ -66,11 +76,11 @@
                     
 
                       <div class="center-buttons">
-                        <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">All Listings</button></a></div>
+                        <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">My Listings</button></a></div>
                         <div class="button-move"><a href="/listing/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
-                      </div>
+                      </div> -->
 
-                      <div class="d-flex justify-content-evenly text-center mt-5 mb-2">
+                      <!-- <div class="d-flex justify-content-evenly text-center mt-5 mb-2">
                         <div class="px-3">
                           <p class="mb-2 h5">1000</p>
                           <p class="text-muted mb-0">Credits</p>
@@ -79,7 +89,7 @@
                           <p class="mb-2 h5">5</p>
                           <p class="text-muted mb-0">Sales</p>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
           

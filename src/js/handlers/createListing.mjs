@@ -22,7 +22,11 @@ export function setCreateListingListener() {
         delete post.tags;
       }
 
-      if (post.media === "") {
+      // if (post.media === "") {
+      //   delete post.media;
+      // }
+
+      if (!media.value || media.value === "") {
         delete post.media;
       }
 
