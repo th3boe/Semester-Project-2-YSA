@@ -26,7 +26,7 @@ export function setCreateListingListener() {
       //   delete post.media;
       // }
 
-      if (!media.value || media.value === "") {
+      if (media.value === "") {
         delete post.media;
       }
 
