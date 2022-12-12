@@ -17,7 +17,7 @@ export async function addBid(id, amount) {
 
   if (response.ok) {
     save("yourProfile", userName);
-    location.href = "../../../../listing/index.html";
+    location.href = `../../../../listing/index.html?id=${id}`;
     return await response.json();
   }
 
