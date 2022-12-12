@@ -34,7 +34,11 @@ export function renderListings(listings) {
 
         ${viewListing}
 
-        <p class="card-footer text-muted m-0">${listing.endsAt}</p>
+        <p class="card-footer text-muted m-0">Closes at: </br> ${new Date(
+          listing.endsAt
+        ).toDateString()} at ${new Date(
+      listing.endsAt
+    ).toLocaleTimeString()}</p>
         </div>
         `;
   }
