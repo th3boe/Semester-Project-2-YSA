@@ -33,8 +33,8 @@ export async function getProfile() {
       />`
       : "";
 
-    const wins = profileInfo.wins[0]
-      ? `<p>Wins: ${profileInfo.wins[0]}</p>`
+    const wins = profileInfo.wins[1]
+      ? `<p>Wins: ${profileInfo.wins[1]}</p>`
       : " Wins: 0 ";
 
     console.log(profileInfo.wins[0]);
@@ -48,9 +48,9 @@ export async function getProfile() {
         <p class="text-muted mb-4">${wins} <span class="mx-2">|</span> Listings: ${profileInfo._count.listings} </p>
 
         <div class="center-buttons">
+            <div class="button-move"><a href="/profile/avatarEdit/"><button class="w-30 bttn btn-lg" type="button">Update Avatar</button></a></div>
             <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">My Listings</button></a></div>
             <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">All Listings</button></a></div>
-            <div class="button-move"><a href="/profile/avatarEdit/"><button class="w-30 bttn btn-lg" type="button">Update Avatar</button></a></div>
         </div>
 
         <div class="card-footer d-flex justify-content-evenly text-center mt-5">

@@ -22,7 +22,7 @@ export function renderListings(listings) {
     const viewListing = token
       ? `<div class="center-buttons mb-3">
       <div class="button-move"><a href="listing/?id=${listing.id}"><button class="w-30 bttn btn-lg" type="button" alt="View Listing Button">View Listing</button></a></div>
-    </div> `
+      </div> `
       : "";
 
     container.innerHTML += `
@@ -34,12 +34,10 @@ export function renderListings(listings) {
 
         ${viewListing}
 
-        <p class="card-footer text-muted m-0">Closes at: </br> ${new Date(
-          listing.endsAt
-        ).toDateString()} at ${new Date(
-      listing.endsAt
-    ).toLocaleTimeString()}</p>
-        </div>
-        `;
+        <p class="card-footer text-muted m-0">Closes at: 
+        </br> ${new Date(listing.endsAt).toDateString()} 
+        at ${new Date(listing.endsAt).toLocaleTimeString()}</p>
+
+        </div>`;
   }
 }
