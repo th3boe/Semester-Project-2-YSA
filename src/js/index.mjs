@@ -12,4 +12,6 @@ if (path === "/profile/signin/") {
   listeners.setCreateListingListener();
 } else if (path === "/profile/avatarEdit/") {
   listeners.setEditAvatarListener();
+} else if (path === "/listing/bid/") {
+  listeners.setAddBidListener();
 }
