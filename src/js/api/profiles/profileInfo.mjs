@@ -33,9 +33,11 @@ export async function getProfile() {
       />`
       : "";
 
-    const wins = profileInfo.wins[1]
-      ? `<p>Wins: ${profileInfo.wins[1]}</p>`
+    const wins = profileInfo.wins[0]
+      ? `<p>Wins: ${profileInfo.wins[0]}</p>`
       : " Wins: 0 ";
+
+    console.log(profileInfo.wins[0]);
 
     container.innerHTML = `
       <div class="card text-center justify-content-center m-4 p-0">
