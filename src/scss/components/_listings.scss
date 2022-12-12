@@ -17,6 +17,12 @@ p {
   text-align: center;
 }
 
+.bids-info {
+  font-weight: 500;
+  font-size: 18px;
+  color: $border-nav-color-and-text;
+}
+
 .button-move {
   display: inline-block;
   max-width: 200px;
@@ -46,6 +52,18 @@ p {
   border: black solid 1px;
   border-radius: 50%;
   width: 50%;
+  align-items: center;
+  margin: 15px auto;
+  padding: 0px;
+}
+
+.seller-image {
+  box-shadow: $box-shadow-border;
+  object-fit: cover;
+  border: black solid 1px;
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
   align-items: center;
   margin: 15px auto;
   padding: 0px;
