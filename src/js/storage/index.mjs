@@ -2,6 +2,10 @@ export function storageSave(theKey, storageValue) {
   localStorage.setItem(theKey, JSON.stringify(storageValue));
 }
 
+export function save(theKey, storageValue) {
+  localStorage.setItem(theKey, JSON.stringify(storageValue));
+}
+
 export function load(theKey) {
   try {
     const storageValue = localStorage.getItem(theKey);
