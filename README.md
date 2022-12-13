@@ -4,7 +4,7 @@ Online Yard Sale Auction Site!
 
 ## Screenshot from semester project
 
-![image](image link)
+![image](images/YardSaleAuctions.png)
 
 ## Introduction
 
@@ -32,17 +32,19 @@ Online Yard Sale Auction Site!
 - [x] A user with a stud.noroff.no email may register
 - [x] A registered user may login
 - [x] A registered user may logout
-- [] A registered user may update their avatar
+- [x] A registered user may update their avatar
 - [x] A registered user may view their total credit
 - [x] A registered user may create a Listing with a title, deadline date, media gallery and description
-- [] A registered user may add a Bid to another user’s Listing
+- [x] A registered user may add a Bid to another user’s Listing
 - [x] A registered user may view Bid(s) made on a Listing
-- [] A registered user may use credit to make a Bid on another user’s Listing
+- [x] A registered user may use credit to make a Bid on another user’s Listing
 - [x] An unregistered user may search through Listings
 
 ### Added features on the side:
 
 - [x] A registered user may delete a Listing they have added
+- [] A registered user may view their own Listings
+- [] A registered user may view their own Bids
 
 ### WCAG
 
