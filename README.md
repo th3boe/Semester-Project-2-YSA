@@ -1,14 +1,18 @@
 # Semester-Project-2-YSA
 
-Online Yard Sale Auction Site!
-
-## Screenshot from semester project
-
 ![image](images/YardSaleAuctions.png)
+
+Above is a screenshot of the listing page and profile page from a online Yard Sale Auction Site made as part of the second semester project.
 
 ## Introduction
 
-(text)
+The online yard sale auctions page was created as part of the second semester projects. The brief given was to create an auction site for a company where users can add items to be bid on and bid on items other users have put up for auction.
+
+"When a new user joins the website, they are given 1000 credits to use on the site. They can get credits by selling items and use credit by buying items. Non-registered users can search through the listings, but only registered users can make bids on listings."
+
+I wanted my target audience to be the average user (families and teenagers) wanting to get rid of stuff they have laying around, hence the name "yard sale auctions".
+
+Built using HTML, CSS frameworks and JS.
 
 ## CheckList for delivery
 
@@ -48,7 +52,9 @@ Online Yard Sale Auction Site!
 
 ### WCAG
 
-(text)
+The website has been WCAG checked several times during the creation process. Some of what has been checked is the color palette and that the contrast is okay for people suffering from vision impairments. Alt text has also been added to images for when the page needs to be used with voiceover, for example "Siri".
+
+This is just some of what has been checked, contrast and colors is a very important factor for a page to be useful for the average audience.
 
 ### User Resources
 
@@ -58,12 +64,12 @@ Online Yard Sale Auction Site!
 
 ### What went well on the project
 
-(text)
+I feel like the design process of the project went very well, using CSS frameworks building it. The Layout in my opinion is also neat and easy to navigate.
 
 ### Logo
 
-(text)
-![image](image link)
+The logo was built to be remembered and to be playful. The icon would attract the inner child of the adult using, and be easily remembered by kids. After all, when thinking of a good old fashioned Yard Sale most of us would think of the bright red wagon in a yard.
+![image](images/logo-auction-fixed.png)
 
 ### Design choice
 
@@ -95,7 +101,7 @@ If someone was to want to help with the project or collaborate on it, they can c
 
 ### Contact
 
-If you want to get in contact with me (the developer), you can look me up on my animation portfolio or Linkedin.
+If you want to get in contact with me (the developer), you can look me up on my animation portfolio or Linkedin page.
 
 [My Animation Portfolio](www.boe3am.com)
 
