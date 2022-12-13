@@ -10806,6 +10806,16 @@ textarea.form-control-lg {
   border: 1.5px solid black;
 }
 
+#opacity-bttn {
+  opacity: 50%;
+}
+#opacity-bttn:hover {
+  background-color: #ac5d28;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.507);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
 body {
   background-color: #d8d8d8;
 }
@@ -10893,6 +10903,12 @@ p {
   text-align: center;
 }
 
+.bids-info {
+  font-weight: 500;
+  font-size: 18px;
+  color: #7e3a12;
+}
+
 .button-move {
   display: inline-block;
   max-width: 200px;
@@ -10920,8 +10936,20 @@ p {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
   object-fit: cover;
   border: black solid 1px;
-  border-radius: 15px;
+  border-radius: 50%;
+  width: 50%;
+  align-items: center;
+  margin: 15px auto;
+  padding: 0px;
+}
+
+.seller-image {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+  object-fit: cover;
+  border: black solid 1px;
+  border-radius: 50%;
   width: 20%;
+  height: 20%;
   align-items: center;
   margin: 15px auto;
   padding: 0px;

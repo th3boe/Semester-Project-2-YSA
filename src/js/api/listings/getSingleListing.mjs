@@ -1,5 +1,6 @@
 import { API_AUCTION_URL } from "../constants.mjs";
 import { authFetch } from "./authFetch.mjs";
+import { deleteListing } from "./deleteListing.mjs";
 
 const params = new URLSearchParams(document.location.search);
 const id = params.get("id");
@@ -9,9 +10,7 @@ const action = "/listings";
 const method = "GET";
 
 const url = `${API_AUCTION_URL}${action}/${id}?_seller=true&_bids=true`;
-
 const title = document.querySelector("title");
-
 const container = document.querySelector("#singleListing");
 
 (async function getSingleListing() {
@@ -29,12 +28,30 @@ const container = document.querySelector("#singleListing");
     />`
       : "";
 
-    const avatarImage = singleListing.avatar
+    const avatarImage = singleListing.seller.avatar
       ? `<img
       src="${singleListing.seller.avatar}"
       alt="Avatar for ${singleListing.seller.name}"
       class="seller-image"
     />`
+      : "";
+
+    const bidHistory = singleListing;
+    for (var i = 0; i < singleListing.bids.length; i++) {
+      console.log(singleListing.bids[i]);
+    }
+
+    const sortedBids = bidHistory.bids.sort((a, b) => b.amount - a.amount);
+    const bids = sortedBids[0]
+      ? `<p class="bids-info">Currently the latest bid made is: </p><p>${
+          singleListing.bids[0].amount
+        } Credits by ${
+          singleListing.bids[0].bidderName
+        } </p> <p class="bids-info"> Created at: </p> <p>${new Date(
+          singleListing.bids[0].created
+        ).toDateString()} at ${new Date(
+          singleListing.bids[0].created
+        ).toLocaleTimeString()}</p>`
       : "";
 
     container.innerHTML = `
@@ -43,22 +60,35 @@ const container = document.querySelector("#singleListing");
       <p class="listing-text my-3">${singleListing.description}</p>
       ${image}
       <p>${singleListing.tags}</p>
-      <h3>Information about the seller of this item:</h3>
-      <p>Name: ${singleListing.seller.name}</p>
-      <p>Email: ${singleListing.seller.email}</p>
-      ${avatarImage}
-      <h4>Bids:</h4>
-      <p>Current bids on this item: ${singleListing.bids[10].amount}</p>
-      <p>Top bidder: ${singleListing.bids[10].bidderName}</p>
-      <p>Highest bid created: ${singleListing.bids[10].created}</p>
-      <p class="card-footer text-muted m-0">${singleListing.endsAt}</p>
+      <p>Closes at: </br> ${new Date(
+        singleListing.endsAt
+      ).toDateString()} at ${new Date(
+      singleListing.endsAt
+    ).toLocaleTimeString()}</p>
+      <div class="card text-center justify-content-center m-2 p-3">
+        ${bids}
+        <p class="bids-info">Amount of bids on this item is: </br> ${
+          singleListing._count.bids
+        }</h4>
       </div>
-
+      <div class="card-footer text-muted m-0">
+        <h3>Information about the seller:</h3>
+        ${avatarImage}
+        <p>The seller is ${singleListing.seller.name}</p>
+        <p>Contact the seller by email: ${singleListing.seller.email}</p>
+      </div>
+    </div>
 
     <div class="center-buttons mb-3">
-    <div class="button-move"><a href="/listing/bid/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Add a Bid</button></a></div>
-      <div class="button-move"><a href="/listing/edit/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Edit Listing</button></a></div>
-      <div class="button-move"><button class="w-30 bttn btn-lg" type="button" id="delete" singleListing-delete="${singleListing.id}">Delete Listing</button></div>
+      <button class="w-30 bttn btn-lg" id="delete" type="button" data-delete="${
+        singleListing.id
+      }">Delete Listing</button>
+      <a href="/listing/bid/?id=${
+        singleListing.id
+      }"><button class="w-30 bttn btn-lg" type="button">Add a Bid</button></a>
+      <a href="/listing/edit/?id=${
+        singleListing.id
+      }"><button class="w-30 bttn btn-lg" type="button">Edit Listing</button></a>
     </div>`;
 
     const deleteBtn = document.querySelector("#delete");

@@ -1,6 +1,6 @@
 import { remove } from "../../storage/index.mjs";
 
-export function logoutButton() {
+export function removeAddButton() {
   const theButton = document.querySelector("#logout");
 
   if (theButton) {
