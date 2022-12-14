@@ -18,18 +18,20 @@ Built using HTML, CSS frameworks and JS.
 
 ### Delivery links
 
-- [] A Gantt chart for project timing
-  (link)
-- [x] A design prototype
+- [x] A Gantt chart for project timing
+      https://trello.com/invite/b/BNDQUl3X/ATTIa66cb62980f4713eff73244305865961D2B6876C/auction-site
+- [x] A design prototype desktop
       https://xd.adobe.com/view/c06308bf-c42f-4fd6-81af-eb8eec4f4120-9530/
+- [x] A design prototype mobile
+      https://xd.adobe.com/view/85c74b97-4ad1-4b3f-ba76-b377cf594fe7-d094/
 - [x] A style guide
       https://xd.adobe.com/view/c3c79efc-cddd-47b1-8726-8d8b9a549290-9694/
-- [] A kanban project board
-  (link)
+- [x] A kanban project board
+      https://trello.com/invite/b/BNDQUl3X/ATTIa66cb62980f4713eff73244305865961D2B6876C/auction-site
 - [x] A repository link
       https://github.com/th3boe/Semester-Project-2-YSA
-- [] A hosted application demo link
-  (link)
+- [x] A hosted application demo link
+      https://guileless-strudel-677875.netlify.app
 
 ### The site must contain:
 
@@ -163,4 +165,6 @@ Add edit!
 
 Fill out the information on top in all the HTML files.
 
-Clean up - remove commented content
+Clean up - remove commented content.
+
+remove / keep buttons in footer for signed in and signed out.
