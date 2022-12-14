@@ -4,6 +4,8 @@
 
 Above is a screenshot of the listing page and profile page from a online Yard Sale Auction Site made as part of the second semester project.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/77d57e98-c79f-4698-8db1-902a474abc82/deploy-status)](https://app.netlify.com/sites/yard-sale-auctions/deploys)
+
 ## Introduction
 
 The online yard sale auctions page was created as part of the second semester projects. The brief given was to create an auction site for a company where users can add items to be bid on and bid on items other users have put up for auction.
@@ -169,3 +171,9 @@ Fill out the information on top in all the HTML files.
 Clean up - remove commented content.
 
 remove / keep buttons in footer for signed in and signed out.
+
+add active only at the end of the url for listings
+
+add view my bids
+
+add view my listings
