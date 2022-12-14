@@ -20,14 +20,14 @@ Built using HTML, CSS frameworks and JS.
 
 - [] A Gantt chart for project timing
   (link)
-- [] A design prototype
-  (link)
-- [] A style guide
-  (link)
+- [x] A design prototype
+      https://xd.adobe.com/view/c06308bf-c42f-4fd6-81af-eb8eec4f4120-9530/
+- [x] A style guide
+      https://xd.adobe.com/view/c3c79efc-cddd-47b1-8726-8d8b9a549290-9694/
 - [] A kanban project board
   (link)
-- [] A repository link
-  (link)
+- [x] A repository link
+      https://github.com/th3boe/Semester-Project-2-YSA
 - [] A hosted application demo link
   (link)
 
@@ -56,9 +56,13 @@ The website has been WCAG checked several times during the creation process. Som
 
 This is just some of what has been checked, contrast and colors is a very important factor for a page to be useful for the average audience.
 
-### User Resources
+### Used Resources
 
-(text)
+We were given a list of approved resources that we had to pick from when choosing how to build the page.
+
+The CSS processor chosen for the project is _SASS/SCSS_, while the CSS framework I wanted to work with was _Bootstrap (>5)_.
+
+For the hosting services and design applications and planning applications, I chose to use _Netlify_, _Adobe XD_ and _Trello._
 
 ## Description
 
@@ -73,31 +77,57 @@ The logo was built to be remembered and to be playful. The icon would attract th
 
 ### Design choice
 
-(text)
+The design choice was based a little on the JS2 project, which means that some features like the navigation menu was stolen from there. I did this based on the fact that I thought that it would fit the theme.
+
+The chosen theme and color palette was a fun project. I started with thinking about the brief of making an auction site, which then led to a process where Yard Sale came to mind. Yard Sale is something people usually do after summer during the autumn to prepare for winter which let to the color scheme being autumn based.
+
+I then had to take the autumn theme and create a color palette that would be WCAG approved which you can read about above under the WCAG headline.
 
 ### Javascript
 
-(text)
+The used Javascript has bases from several sources, most of which was originally created for the JS2 assignment and just recreated for the purpose of this assignment. The code sections all had to be somewhat changed to fit with the Auction functionality, but still the code is very similar.
 
 ### Built With
 
-- [CSS Frameworks / SCSS](https://github.com/th3boe/semester-project-1-CSM/tree/main/css)
-- [HTML](https://github.com/th3boe/semester-project-1-CSM)
-- [JS] link
+- [CSS Frameworks / SCSS](https://github.com/th3boe/Semester-Project-2-YSA/tree/main/src/scss)
+- [HTML](https://github.com/th3boe/Semester-Project-2-YSA) These files can be found in folders for the page you want.
+- [JS](https://github.com/th3boe/Semester-Project-2-YSA/tree/main/src/js)
 
 ## Getting Started
 
 ### Installing
 
-The project has quite a simple build to copy, no dependencies needed. All you have to do is clone the repo:
+The project repository can be cloned using this link:
 
 ```bash
-git clone https://github.com/th3boe/semester-project-1-CSM.git
+git clone https://github.com/th3boe/Semester-Project-2-YSA.git
 ```
+
+Which you can open using Visual Studio Code or another code editor.
+
+The repository has some connected dependencies which can be accessed using terminal:
+
+Install:
+
+```bash
+npm i
+```
+
+Run build and live-server:
+
+```bash
+npm run start
+```
+
+Information can be found about this in the package.json file that is in the project file.
+
+The API was given by the school and the information about what links and what names needs to be used for the calls to work can be found here:
+
+https://docs.noroff.dev/auctionhouse-endpoints/listings
 
 ### Contributing
 
-If someone was to want to help with the project or collaborate on it, they can clone the repo and this can later be merged.
+If someone would want to help with the project or collaborate on it, they could fork the repo, which could later be merged.
 
 ### Contact
 
@@ -112,7 +142,15 @@ If you want to get in contact with me (the developer), you can look me up on my 
 ### Bootstrap guidance:
 
 - https://getbootstrap.com/docs/4.0/utilities/spacing/
--
+- https://getbootstrap.com/docs/4.0/components/card/
+- https://mdbootstrap.com/docs/standard/extended/profiles/
+- https://mdbootstrap.com/docs/standard/extended/registration/
+
+These are links to some of the bootstrap that was used and changed for this project. The Navbar was already created for the JS2 project so I do not have a link for that, but it was created using a combination of several nav codes from the get bootrap page.
+
+For the code I used code from the previous JS project that was created with a start from the video posted by teacher Oliver. And later added to and changed.
+
+For this project the code was changed yet again.
 
 #### Maybe Changes
 
@@ -121,8 +159,8 @@ Move signIn to signOut place??
 
 lock nav to stay put when used is scrolling listings!
 
-Add edit
+Add edit!
 
-Figure out how to add in bid info to post.
+Fill out the information on top in all the HTML files.
 
-Limit view of unregistered user.
+Clean up - remove commented content
