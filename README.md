@@ -75,6 +75,7 @@ I feel like the design process of the project went very well, using CSS framewor
 ### Logo
 
 The logo was built to be remembered and to be playful. The icon would attract the inner child of the adult using, and be easily remembered by kids. After all, when thinking of a good old fashioned Yard Sale most of us would think of the bright red wagon in a yard.
+
 ![image](images/logo-auction-fixed.png)
 
 ### Design choice
