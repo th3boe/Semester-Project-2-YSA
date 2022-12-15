@@ -33,7 +33,7 @@ Built using HTML, CSS frameworks and JS.
 - [x] A repository link
       https://github.com/th3boe/Semester-Project-2-YSA
 - [x] A hosted application demo link
-      https://guileless-strudel-677875.netlify.app
+      https://yard-sale-auctions.netlify.app/
 
 ### The site must contain:
 
