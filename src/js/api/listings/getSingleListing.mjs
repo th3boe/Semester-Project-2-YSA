@@ -1,6 +1,7 @@
 import { API_AUCTION_URL } from "../constants.mjs";
 import { authFetch } from "./authFetch.mjs";
 import { deleteListing } from "./deleteListing.mjs";
+import { load } from "../../storage/index.mjs";
 
 const params = new URLSearchParams(document.location.search);
 const id = params.get("id");
@@ -12,11 +13,15 @@ const method = "GET";
 const url = `${API_AUCTION_URL}${action}/${id}?_seller=true&_bids=true`;
 const title = document.querySelector("title");
 const container = document.querySelector("#singleListing");
+const addButtonContainer = document.querySelector("#listingButtons");
 
 (async function getSingleListing() {
   try {
     const response = await authFetch(url, { method });
     const singleListing = await response.json();
+
+    const seller = singleListing.seller.name;
+    const { name } = load("yourProfile");
 
     title.innerHTML = `Yard Sale Auctions | ${singleListing.title}`;
 
@@ -77,22 +82,27 @@ const container = document.querySelector("#singleListing");
         <p>The seller is ${singleListing.seller.name}</p>
         <p>Contact the seller by email: ${singleListing.seller.email}</p>
       </div>
-    </div>
-
-    <div class="center-buttons mb-3">
-      <button class="w-30 bttn btn-lg" id="delete" type="button" data-delete="${
-        singleListing.id
-      }">Delete Listing</button>
-      <a href="/listing/bid/?id=${
-        singleListing.id
-      }"><button class="w-30 bttn btn-lg" type="button">Add a Bid</button></a>
-      <a href="/listing/edit/?id=${
-        singleListing.id
-      }"><button class="w-30 bttn btn-lg" type="button">Edit Listing</button></a>
     </div>`;
 
-    const deleteBtn = document.querySelector("#delete");
-    deleteBtn.addEventListener("click", deleteListing);
+    if (seller === name) {
+      console.log("This was created by you!");
+      addButtonContainer.innerHTML = `
+        <div class="center-buttons m-3">
+        <button class="w-30 bttn btn-lg" id="delete" type="button" data-delete="${singleListing.id}">Delete Listing</button>
+        <a href="/listing/edit/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Edit Listing</button></a>
+      </div>`;
+      addButtonContainer.classList = "visual-btn";
+
+      const deleteBtn = document.querySelector("#delete");
+      deleteBtn.addEventListener("click", deleteListing);
+    } else {
+      console.log("This was not your genious creation!");
+      addButtonContainer.innerHTML = `
+          <div class="center-buttons m-3">
+          <a href="/listing/bid/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Add a Bid</button></a>
+        </div>`;
+      addButtonContainer.classList = "visual-btn";
+    }
   } catch (error) {
     console.log(error);
   }

@@ -4,7 +4,7 @@ import { authFetch } from "./authFetch.mjs";
 const action = "/listings/";
 const method = "DELETE";
 
-export async function deleteListing() {
+export async function deleteListing(postData) {
   const id = this.dataset.delete;
   const url = API_AUCTION_URL + action + id;
 
@@ -12,10 +12,15 @@ export async function deleteListing() {
     console.log("URL:", url);
 
     try {
-      const response = await authFetch(url, { method });
-      const singleListing = await response.json();
+      //   const response = await authFetch(url, { method });
+      //   const getSingleListing = await response.json();
+      const response = await authFetch(url, {
+        method,
+        body: JSON.stringify(postData),
+      });
 
       location.href = "../../../index.html";
+      return await response.json();
     } catch (error) {
       console.log(error);
     }

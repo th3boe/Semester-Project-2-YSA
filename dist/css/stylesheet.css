@@ -10816,6 +10816,10 @@ textarea.form-control-lg {
   border: 1px solid black;
 }
 
+.visual-btn {
+  display: block;
+}
+
 body {
   background-color: #d8d8d8;
 }
