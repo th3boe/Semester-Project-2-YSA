@@ -51,12 +51,10 @@ Built using HTML, CSS frameworks and JS.
 ### Added features on the side:
 
 - [x] A registered user may delete a Listing they have added
-- [] A registered user may view their own Listings
-- [] A registered user may view their own Bids
+- [x] A registered user may view their own Bids
 
 - [x] A registered user only bid on other creators Listings
 - [x] A registered user only delete their own Listings
-- [] A registered user only edit their own Listings
 
 ### WCAG
 
@@ -150,10 +148,11 @@ If you want to get in contact with me (the developer), you can look me up on my 
 
 ### Bootstrap guidance:
 
-- https://getbootstrap.com/docs/4.0/utilities/spacing/
-- https://getbootstrap.com/docs/4.0/components/card/
+- https://getbootstrap.com/docs/5.2/utilities/spacing/
+- https://getbootstrap.com/docs/5.2/components/card/
 - https://mdbootstrap.com/docs/standard/extended/profiles/
 - https://mdbootstrap.com/docs/standard/extended/registration/
+- https://getbootstrap.com/docs/5.2/components/carousel/
 
 These are links to some of the bootstrap that was used and changed for this project. The Navbar was already created for the JS2 project so I do not have a link for that, but it was created using a combination of several nav codes from the get bootrap page.
 
@@ -163,23 +162,6 @@ For this project the code was changed yet again.
 
 #### Maybe Changes
 
-Move signIn to signOut place??
-(fix this for all pages!!)
-
-lock nav to stay put when used is scrolling listings!
-
-Add edit!
-
 Fill out the information on top in all the HTML files.
 
 Clean up - remove commented content.
-
-remove / keep buttons in footer for signed in and signed out.
-
-add view my bids
-
-add view my listings
-
-remove/ add buttons on single listing based on creator
-
-view more than one image when viewing a listing
