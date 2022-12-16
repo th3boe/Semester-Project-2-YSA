@@ -32,7 +32,10 @@ export async function getProfile() {
         alt="Avatar for ${profileInfo.name}"
         class="avatar-image"
       />`
-      : "";
+      : `<p class="m-2">Have you forgotten your manners and not added an avatar image, we decided to give you a random one: </p>
+      <img src="https://picsum.photos/200"
+      class="seller-image m-auto mb-2"
+      alt="404! No Image Found" </br>`;
 
     container.innerHTML = `
       <div class="card text-center justify-content-center m-4 p-0">
@@ -44,7 +47,7 @@ export async function getProfile() {
 
         <div class="center-buttons">
             <div class="button-move"><a href="/profile/avatarEdit/"><button class="w-30 bttn btn-lg" type="button">Update Avatar</button></a></div>
-            <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">My Listings</button></a></div>
+            <div class="button-move"><a href="/profile/myBids/"><button class="w-30 bttn btn-lg" type="button">Current Bids</button></a></div>
             <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">All Listings</button></a></div>
         </div>
 
