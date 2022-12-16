@@ -11,13 +11,16 @@ export function renderListings(listings) {
     const listing = listings[i];
     // if (i === 16) break;
 
-    const image = listing.media
+    const image = listing.media.length
       ? `<img 
-      src="${listing.media}"
+      src="${listing.media[0]}"
+      onerror="this.src='/images/404-image.jpg';"
       alt="Image for ${listing.title}"
       class="auction-image img-fluid"
       />`
-      : "";
+      : `<img src="/images/404-image.jpg" 
+      class="auction-image img-fluid" 
+      alt="404! No Image Found"`;
 
     const viewListing = token
       ? `<div class="center-buttons mb-3">

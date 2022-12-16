@@ -54,6 +54,10 @@ Built using HTML, CSS frameworks and JS.
 - [] A registered user may view their own Listings
 - [] A registered user may view their own Bids
 
+- [x] A registered user only bid on other creators Listings
+- [x] A registered user only delete their own Listings
+- [] A registered user only edit their own Listings
+
 ### WCAG
 
 The website has been WCAG checked several times during the creation process. Some of what has been checked is the color palette and that the contrast is okay for people suffering from vision impairments. Alt text has also been added to images for when the page needs to be used with voiceover, for example "Siri".
@@ -172,8 +176,10 @@ Clean up - remove commented content.
 
 remove / keep buttons in footer for signed in and signed out.
 
-add active only at the end of the url for listings
-
 add view my bids
 
 add view my listings
+
+remove/ add buttons on single listing based on creator
+
+view more than one image when viewing a listing

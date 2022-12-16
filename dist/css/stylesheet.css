@@ -10820,6 +10820,11 @@ textarea.form-control-lg {
   display: block;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  width: 35%;
+}
+
 body {
   background-color: #d8d8d8;
 }
