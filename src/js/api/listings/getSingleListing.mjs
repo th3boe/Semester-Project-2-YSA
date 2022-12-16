@@ -98,9 +98,9 @@ const addButtonContainer = document.querySelector("#listingButtons");
       alt="Avatar for ${singleListing.seller.name}"
       class="seller-image"
     />`
-      : `The seller seems to have forgotten their manners and didn't add an avatar image, we decided to give them one: </br>
-      <img src="/images/error-404-profile.webp"
-      class="seller-image m-4"
+      : `<p class="m-3">The seller seems to have forgotten their manners and didn't add an avatar image, we decided to give them a random one: </p>
+      <img src="https://picsum.photos/200"
+      class="seller-image m-auto mb-3"
       alt="404! No Image Found" </br>`;
 
     const bidHistory = singleListing;
@@ -191,9 +191,8 @@ const addButtonContainer = document.querySelector("#listingButtons");
     if (seller === name) {
       console.log("This work of art was created by you!");
       addButtonContainer.innerHTML = `
-        <div class="center-buttons m-3">
+      <div class="center-buttons m-3">
         <button class="w-30 bttn btn-lg" id="delete" type="button" data-delete="${singleListing.id}">Delete Listing</button>
-        <a href="/listing/edit/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Edit Listing</button></a>
       </div>`;
       addButtonContainer.classList = "visual-btn";
 
@@ -202,7 +201,7 @@ const addButtonContainer = document.querySelector("#listingButtons");
     } else {
       console.log("This is not one of your genious creations!");
       addButtonContainer.innerHTML = `
-          <div class="center-buttons m-3">
+        <div class="center-buttons m-3">
           <a href="/listing/bid/?id=${singleListing.id}"><button class="w-30 bttn btn-lg" type="button">Add a Bid</button></a>
         </div>`;
       addButtonContainer.classList = "visual-btn";
