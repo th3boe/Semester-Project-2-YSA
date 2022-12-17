@@ -12,8 +12,6 @@ export async function deleteListing(postData) {
     console.log("URL:", url);
 
     try {
-      //   const response = await authFetch(url, { method });
-      //   const getSingleListing = await response.json();
       const response = await authFetch(url, {
         method,
         body: JSON.stringify(postData),

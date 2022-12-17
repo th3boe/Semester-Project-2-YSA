@@ -27,70 +27,6 @@ const addButtonContainer = document.querySelector("#listingButtons");
 
     title.innerHTML = `Yard Sale Auctions | ${singleListing.title}`;
 
-    // if (!singleListing.media) {
-    //   singleListing.media.onerror = `this.src="/images/404-image.jpg" alt="Image for ${singleListing.title}"`;
-    //   const image = singleListing.media.length
-    //     ? `<img
-    //       src="${singleListing.media[i]}"
-    //       onerror="this.src='/images/404-image.jpg';"
-    //       alt="Image for ${singleListing.title}"
-    //       class="active"
-    //     />`
-    //     : `this.src="/images/404-image.jpg" alt="Error image for ${singleListing.title}"`;
-    //   singleListing.media.src = image;
-    //   // carouselItem.append(singleListing.media);
-    // } else {
-    //   for (var i = 0; i < singleListing.media.length; i++) {
-    //     console.log(singleListing.media[i]);
-
-    //     var active = "";
-    //     if (i === 0) {
-    //       active = "active";
-    //     }
-
-    //     containerCarousel.innerHTML += `<div class="carousel-item active">
-    //     <img src="${singleListing.media[i]}"
-    //     alt="Image for listing ${singleListing.title}"
-    //     class="auction-image"/>
-    //   </div>`;
-
-    // const carouselItem = document.createElement("div");
-    // carouselItem.classList = "carousel-item";
-    // carouselItem.ariaLabel = `slide ${i}`;
-    // if (carouselItem.ariaLabel === "slide 0") {
-    //   carouselItem.classList = "carousel-item active";
-    // }
-    // singleListing.media.src = singleListing.media[i];
-    // singleListing.media.alt = `Image of ${title}`;
-    // singleListing.media.classList = "d-block w-100 pb-2";
-    // carouselItem.append(singleListing);
-    //   }
-    // }
-
-    // singleListing.media.forEach((image, i) => {
-    //   if (i === 0) {
-    //     let active = "active";
-    //   } else {
-    //     let active = "";
-    //   }
-    //   const sliderNumber = i + 1;
-    // });
-
-    // for (var i = 0; i < singleListing.media.length; i++) {
-    //   console.log(singleListing.media[i]);
-    // }
-
-    // const image = singleListing.media.length
-    //   ? `<img
-    //   src="${singleListing.media[0]}"
-    //   onerror="this.src='/images/404-image.jpg';"
-    //   alt="Image for ${singleListing.title}"
-    //   class="active"
-    // />`
-    //   : `<img src="/images/404-image.jpg"
-    //   class="auction-image img-fluid"
-    //   alt="404! No Image Found"`;
-
     const avatarImage = singleListing.seller.avatar
       ? `<img
       src="${singleListing.seller.avatar}"
@@ -140,34 +76,6 @@ const addButtonContainer = document.querySelector("#listingButtons");
         class="auction-image d-block"/>
       </div>`;
     });
-
-    // containerCarousel.innerHTML += `
-    //   <div class="carousel-item active">
-    //     <div class="specific-outer-slider">
-    //       <div class="specific-inner-slider">
-    //         <img class="auction-image" src="${singleListing.media[i]}" onerror="src='/images/404-image.jpg'" alt="Item image ${sliderNumber}" />
-    //       </div>
-    //     </div>
-    //   </div>`;
-
-    // if (singleListing.media.length === 1) {
-    //   sliderNumber.style.display = "none";
-    // }
-
-    // containerCarousel.innerHTML += `
-    //   <div class="carousel-item ${active}">
-    //     <div class="specific-outer-slider">
-    //       <div class="specific-inner-slider">
-    //         <img class="auction-image" src="${image}" onerror="src='/images/404-image.jpg'" alt="Item image ${sliderNumber}" />
-    //       </div>
-    //     </div>
-    //   </div>`;
-
-    // containerCarousel.innerHTML += `<div class="carousel-item active">
-    //     <img src="${singleListing.media[0]}"
-    //     alt="Image for listing ${singleListing.title}"
-    //     class="auction-image"/>
-    //   </div>`;
 
     containerBottom.innerHTML = `
       <p>${singleListing.tags}</p>

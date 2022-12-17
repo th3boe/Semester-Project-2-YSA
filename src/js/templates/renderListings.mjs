@@ -9,7 +9,6 @@ export function renderListings(listings) {
 
   for (let i = 0; i < listings.length; i++) {
     const listing = listings[i];
-    // if (i === 16) break;
 
     const image = listing.media.length
       ? `<img 
