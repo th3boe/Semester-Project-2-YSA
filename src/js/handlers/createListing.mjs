@@ -18,13 +18,9 @@ export function setCreateListingListener() {
 
       const post = { title, description, tags, media, endsAt };
 
-      if (post.tags === "") {
+      if (tags.value === "") {
         delete post.tags;
       }
-
-      // if (post.media === "") {
-      //   delete post.media;
-      // }
 
       if (media.value === "") {
         delete post.media;

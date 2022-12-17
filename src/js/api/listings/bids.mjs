@@ -1,4 +1,4 @@
-import { save } from "../../storage/index.mjs";
+import { load } from "../../storage/index.mjs";
 import { API_AUCTION_URL } from "../constants.mjs";
 import { authFetch } from "./authFetch.mjs";
 
@@ -16,7 +16,7 @@ export async function addBid(id, amount) {
   const { userName } = await response.json();
 
   if (response.ok) {
-    save("yourProfile", userName);
+    load("yourProfile", userName);
     location.href = `../../../../listing/index.html?id=${id}`;
     return await response.json();
   }

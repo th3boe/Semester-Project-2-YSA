@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Register to become part of our online Yard Sale Auctions family!"/>
     <title>Yard Sale Auctions | Register</title>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/dist/css/stylesheet.css"/>
@@ -16,14 +17,17 @@
       <div class="container d-flex flex-wrap">
         <ul class="nav me-auto">
           <li class="nav-item"><a href="/" class="px-4">Home</a></li>
-          <li class="nav-item signin-btn">
-            <a href="/profile/signin/" class="px-4">Sign In</a>
-          </li>
-          <li class="nav-item">
+          <li class="nav-item register-btn">
             <a href="/profile/register/" class="active px-4">Register</a>
+          </li>
+          <li class="nav-item profile-btn">
+            <a href="/profile/profile/" class="px-4">Profile</a>
           </li>
         </ul>
         <ul class="nav">
+          <li class="nav-item signin-btn">
+            <a href="/profile/signin/" class="px-4">Sign In</a>
+          </li>
           <li class="nav-item logout-btn-container">
             <button class="px-4" id="logout">Sign Out</button>
           </li>
@@ -47,6 +51,11 @@
         <div class="slogan">
             <p>"Hate people in your yard? We AUCTION off your stuff online."</p>
         </div>
+
+        <div class="center-buttons">
+          <div class="button-move"><a href="/profile/profile/"><button class="w-30 bttn btn-lg" type="button">Profile</button></a></div>
+          <div class="button-move"><a href="/listing/create/"><button class="w-30 bttn btn-lg" type="button">Add New Listing</button></a></div>
+      </div>
 
         <section class="h-100">
             <div class="container py-3 h-100">
@@ -83,8 +92,8 @@
                                     class="form-control form-control-lg"
                                     required
                                     placeholder="name@example.com"
-                                    pattern="^[\w\-.]+@(stud.)?noroff.no$"
-                                    title="The email value must be a valid stud.noroff.no or noroff.no email address."/>
+                                    pattern="^[\w\-.]+@stud.noroff.no$"
+                                    title="The email value must be a valid stud.noroff.no email address."/>
                                   <label for="floatingInputEmail">Email Address</label>
                                 </div>
             
@@ -158,13 +167,13 @@
           <li class="nav-item footer">
             <a href="/" class="nav-link px-2">Home</a>
           </li>
-          <li class="nav-item footer">
+          <li class="nav-item footer profile-remove-footer">
             <a href="/profile/profile/" class="nav-link px-2">Profile</a>
           </li>
-          <li class="nav-item footer">
+          <li class="nav-item footer signin-remove-footer">
             <a href="/profile/signin/" class="nav-link px-2">Sign In</a>
           </li>
-          <li class="nav-item footer">
+          <li class="nav-item footer register-remove-footer">
             <a href="/profile/register/" class="active nav-link px-2">Register</a>
           </li>
         </ul>
