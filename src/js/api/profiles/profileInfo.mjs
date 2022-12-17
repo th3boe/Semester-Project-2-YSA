@@ -28,7 +28,7 @@ export async function getProfile() {
     const avatarImage = profileInfo.avatar
       ? `<img
         src="${profileInfo.avatar}"
-        onerror="this.src='/images/error-404-profile.webp';"
+        onerror="this.src='/images/noImage.jpg';"
         alt="Avatar for ${profileInfo.name}"
         class="avatar-image"
       />`

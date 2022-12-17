@@ -4,7 +4,7 @@
 
 Above is a screenshot of the listing page and profile page from a online Yard Sale Auction Site made as part of the second semester project.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/77d57e98-c79f-4698-8db1-902a474abc82/deploy-status)](https://app.netlify.com/sites/yard-sale-auctions/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0e701638-e737-4d32-98e1-24acfc53dacb/deploy-status)](https://app.netlify.com/sites/yard-sale-auctions/deploys)
 
 ## Introduction
 
