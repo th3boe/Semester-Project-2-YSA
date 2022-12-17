@@ -46,7 +46,7 @@ export async function getProfile() {
         <p class="text-muted mb-4">Wins: ${profileInfo.wins.length} <span class="mx-2">|</span> Listings: ${profileInfo._count.listings} </p>
 
         <div class="center-buttons">
-            <div class="button-move"><a href="/profile/avatarEdit/"><button class="w-30 bttn btn-lg" type="button">Update Avatar</button></a></div>
+            <div class="button-move"><a href="/profile/avatar/"><button class="w-30 bttn btn-lg" type="button">Update Avatar</button></a></div>
             <div class="button-move"><a href="/profile/myBids/"><button class="w-30 bttn btn-lg" type="button">Current Bids</button></a></div>
             <div class="button-move"><a href="/"><button class="w-30 bttn btn-lg" type="button">All Listings</button></a></div>
         </div>
