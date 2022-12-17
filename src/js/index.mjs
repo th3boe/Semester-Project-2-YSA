@@ -10,7 +10,7 @@ if (path === "/profile/signin/") {
   listeners.setRegistrationFormListener();
 } else if (path === "/listing/create/") {
   listeners.setCreateListingListener();
-} else if (path === "/profile/avataredit/") {
+} else if (path === "/profile/avatar/") {
   listeners.setEditAvatarListener();
 } else if (path === "/listing/bid/") {
   listeners.setAddBidListener();
