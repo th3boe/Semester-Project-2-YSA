@@ -18,16 +18,11 @@ export function setCreateListingListener() {
 
       const post = { title, description, tags, media, endsAt };
 
-      if (tags.value === "") {
-        delete post.tags;
-      }
-
-      if (media.value === "") {
+      if (!media.value || media.value === [] || media.value === "") {
         delete post.media;
       }
 
       createListing(post);
-      console.log(post);
     });
   }
 }
