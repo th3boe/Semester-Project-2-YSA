@@ -159,9 +159,3 @@ These are links to some of the bootstrap that was used and changed for this proj
 For the code I used code from the previous JS project that was created with a start from the video posted by teacher Oliver. And later added to and changed.
 
 For this project the code was changed yet again.
-
-#### Maybe Changes
-
-Fill out the information on top in all the HTML files.
-
-Clean up - remove commented content.
