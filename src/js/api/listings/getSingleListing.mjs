@@ -30,7 +30,7 @@ const addButtonContainer = document.querySelector("#listingButtons");
     const avatarImage = singleListing.seller.avatar
       ? `<img
       src="${singleListing.seller.avatar}"
-      onerror="this.src='/images/error-404-profile.webp';"
+      onerror="this.src='/images/noImage.jpg';"
       alt="Avatar for ${singleListing.seller.name}"
       class="seller-image"
     />`
@@ -61,21 +61,28 @@ const addButtonContainer = document.querySelector("#listingButtons");
       <h2 class="card-header">${singleListing.title}</h2>
       <p class="listing-text my-3">${singleListing.description}</p>`;
 
-    singleListing.media.forEach((images, i) => {
-      let active = "";
-      if (i === 0) {
-        active = "active";
-      }
-      console.log(images, active);
-      const sliderNumber = i + 1;
-      console.log(sliderNumber);
+    if (singleListing.media.length === 0) {
+      containerCarousel.innerHTML += `<img src="/images/404errorimage.jpg" alt="Error image ${singleListing.title}"
+      class="auction-image d-block"/>`;
+    } else {
+      singleListing.media.forEach((images, i) => {
+        let active = "";
+        if (i === 0) {
+          active = "active";
+        }
 
-      containerCarousel.innerHTML += `<div class="carousel-item ${active}">
+        console.log(images, active);
+        const sliderNumber = i + 1;
+        console.log(sliderNumber);
+
+        containerCarousel.innerHTML += `<div class="carousel-item ${active}">
         <img src="${images}"
+        onerror="this.src='/images/404errorimage.jpg';"
         alt="Image number ${sliderNumber} for listing ${singleListing.title}"
         class="auction-image d-block"/>
       </div>`;
-    });
+      });
+    }
 
     containerBottom.innerHTML = `
       <p>${singleListing.tags}</p>

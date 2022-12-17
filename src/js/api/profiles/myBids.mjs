@@ -36,11 +36,11 @@ async function getMyBids() {
       const image = currentBids.listing.media.length
         ? `<img 
       src="${currentBids.listing.media[0]}"
-      onerror="this.src='/images/404-image.jpg';"
+      onerror="this.src='/images/404errorimage.jpg';"
       alt="Image for ${currentBids.listing.title}"
       class="auction-image img-fluid"
       />`
-        : `<img src="/images/404-image.jpg" 
+        : `<img src="/images/404errorimage.jpg" 
       class="auction-image img-fluid" 
       alt="404! No Image Found"`;
 
