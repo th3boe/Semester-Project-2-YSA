@@ -19,6 +19,10 @@ export async function addBid(id, amount) {
     load("yourProfile", userName);
     location.href = `../../../../listing/index.html?id=${id}`;
     return await response.json();
+  } else {
+    alert(
+      "Your bid must be higher than the current bid, please up your game if you want this item!"
+    );
   }
 
   throw new Error(response);
