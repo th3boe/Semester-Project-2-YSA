@@ -13,12 +13,15 @@ export function setCreateListingListener() {
       const title = formData.get("title");
       const description = formData.get("description");
       const tags = formData.get("tags").split(", ");
-      const media = formData.get("media").split(", ");
+
+      let unfilteredMedia = formData.get("media").split(", ");
+      const media = unfilteredMedia.filter((value) => value !== "");
+
       const endsAt = new Date(formData.get("endsAt"));
 
       const post = { title, description, tags, media, endsAt };
 
-      if (!media.value || media.value === [] || media.value === "") {
+      if (media.length === 0) {
         delete post.media;
       }
 
